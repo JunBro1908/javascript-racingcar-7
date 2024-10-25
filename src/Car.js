@@ -1,4 +1,4 @@
-const { Random } = require("@woowacourse/mission-utils");
+import { Random } from "@woowacourse/mission-utils";
 
 class Car {
   constructor(name) {
@@ -14,4 +14,4 @@ class Car {
   }
 }
 
-module.exports = Car;
+export default Car;

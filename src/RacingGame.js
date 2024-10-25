@@ -1,5 +1,5 @@
-const { Console } = require("@woowacourse/mission-utils");
-const Car = require("./Car");
+import { Console } from "@woowacourse/mission-utils";
+import Car from "./Car.js";
 
 class RacingGame {
   constructor(carNames, tryCount) {
@@ -13,7 +13,6 @@ class RacingGame {
       this.printRoundResult();
     }
     this.printWinners();
-    Console.close();
   }
 
   printRoundResult() {
@@ -32,4 +31,4 @@ class RacingGame {
   }
 }
 
-module.exports = RacingGame;
+export default RacingGame;
